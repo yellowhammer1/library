@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Library - Loans</title>
+</head>
+<body>
+<header>
+    <span>Library - Loans</span>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="authors.html">Authors</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="loans.html">Loans</a></li>
+            <li><a href="readers.html">Readers</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Loans</h1>
+    <article id="formBlocks">
+        <article>
+            <h2>GET Loan</h2>
+            <form action="" id="getLoan">
+                <div>
+                    <label for="id">id</label>
+                    <input type="number" id="id" name="id" required />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>GET Loans</h2>
+            <form action="" id="getLoans">
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>POST Loan</h2>
+            <form action="" id="postLoan">
+                <div>
+                    <label for="borrowed">borrowed</label>
+                    <input type="date" id="borrowed" name="borrowed" required />
+                </div>
+                <div>
+                    <label for="returned">returned</label>
+                    <input type="date" id="returned" name="returned" />
+                </div>
+                <div>
+                    <label for="readerId">reader</label>
+                    <input type="number" id="readerId" name="reader ID" required />
+                </div>
+                <div>
+                    <label for="bookId">book</label>
+                    <input type="number" id="bookId" name="book ID" required />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>PUT Loan</h2>
+            <form action="" id="putLoan">
+                <div>
+                    <label for="id">id</label>
+                    <input type="number" id="id" name="id" required />
+                </div>
+                <div>
+                    <label for="borrowed">borrowed</label>
+                    <input type="date" id="borrowed" name="borrowed" required />
+                </div>
+                <div>
+                    <label for="returned">returned</label>
+                    <input type="date" id="returned" name="returned" />
+                </div>
+                <div>
+                    <label for="readerId">reader</label>
+                    <input type="number" id="readerId" name="reader ID" required />
+                </div>
+                <div>
+                    <label for="bookId">book</label>
+                    <input type="number" id="bookId" name="book ID" required />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>DELETE Loan</h2>
+            <form action="" id="deleteLoan">
+                <div>
+                    <label for="id">id</label>
+                    <input type="number" id="id" name="id" required />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+    </article>
+    <section id="results">
+        <h2>Results</h2>
+        <h3></h3>
+        <div></div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Library Management System</p>
+</footer>
+<script type="module" src="../js/loans.js"></script>
+</body>
+</html>

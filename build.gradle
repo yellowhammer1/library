@@ -1,0 +1,60 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.5'
+	id 'io.spring.dependency-management' version '1.1.6'
+}
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+sourceSets {
+	main {
+		java {
+			srcDir 'server/src/main/java'
+		}
+		resources {
+			srcDir 'server/src/main/resources'
+		}
+	}
+	test {
+		java {
+			srcDir 'server/src/test/java'
+		}
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation group: 'org.hibernate.orm', name: 'hibernate-core', version: '6.6.1.Final'
+	runtimeOnly 'com.h2database:h2'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation group: 'org.springframework.security', name: 'spring-security-core', version: '6.3.5'
+	implementation group: 'org.postgresql', name: 'postgresql', version: '42.7.4'
+	compileOnly 'org.projectlombok:lombok:1.18.34'
+	annotationProcessor 'org.projectlombok:lombok:1.18.34'
+	testCompileOnly 'org.projectlombok:lombok:1.18.34'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
+	implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.2.1'
+	implementation group: 'io.swagger.core.v3', name: 'swagger-annotations', version: '2.2.25'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
+	testImplementation group: 'com.h2database', name: 'h2', version: '2.2.224'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Library - Authors</title>
+</head>
+<body>
+<header>
+    <span>Library - Authors</span>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="authors.html">Authors</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="loans.html">Loans</a></li>
+            <li><a href="readers.html">Readers</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Authors</h1>
+    <article id="formBlocks">
+        <article>
+            <h2>GET Author</h2>
+            <form action="" id="getAuthor">
+                <div>
+                    <label for="id">id</label>
+                    <input type="number" id="id" name="id" required />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>GET Authors</h2>
+            <form action="" id="getAuthors">
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>POST Author</h2>
+            <form action="" id="postAuthor">
+                <div>
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div>
+                    <label for="birthdate">birthdate</label>
+                    <input type="date" id="birthdate" name="birthdate" />
+                </div>
+                <div>
+                    <label for="nationality">nationality</label>
+                    <input type="text" id="nationality" name="nationality" />
+                </div>
+                <div>
+                    <label for="bookIDs">books</label>
+                    <input type="text" id="bookIDs" name="book IDs" />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>PUT Author</h2>
+            <form action="" id="putAuthor">
+                <div>
+                    <label for="id">id</label>
+                    <input type="number" id="id" name="id" required />
+                </div>
+                <div>
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div>
+                    <label for="birthdate">birthdate</label>
+                    <input type="date" id="birthdate" name="birthdate" />
+                </div>
+                <div>
+                    <label for="nationality">nationality</label>
+                    <input type="text" id="nationality" name="nationality" />
+                </div>
+                <div>
+                    <label for="bookIDs">books</label>
+                    <input type="text" id="bookIDs" name="book IDs" />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>DELETE Author</h2>
+            <form action="" id="deleteAuthor">
+                <div>
+                    <label for="id">id</label>
+                    <input type="number" id="id" name="id" required />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+    </article>
+    <section id="results">
+        <h2>Results</h2>
+        <h3></h3>
+        <div></div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Library Management System</p>
+</footer>
+<script type="module" src="../js/authors.js"></script>
+</body>
+</html>

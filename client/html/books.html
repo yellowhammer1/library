@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Library - Books</title>
+</head>
+<body>
+<header>
+    <span>Library - Books</span>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="authors.html">Authors</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="loans.html">Loans</a></li>
+            <li><a href="readers.html">Readers</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Books</h1>
+    <article id="formBlocks">
+        <article>
+            <h2>GET Book</h2>
+            <form action="" id="getBook">
+                <div>
+                    <label for="id">id</label>
+                    <input type="number" id="id" name="id" required />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>GET Books</h2>
+            <form action="" id="getBooks">
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>POST Book</h2>
+            <form action="" id="postBook">
+                <div>
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div>
+                    <label for="numberOfCopies">number of copies</label>
+                    <input type="number" id="numberOfCopies" name="number of copies" required />
+                </div>
+                <div>
+                    <label for="isbn">isbn</label>
+                    <input type="text" id="isbn" name="isbn" />
+                </div>
+                <div>
+                    <label for="published">published</label>
+                    <input type="date" id="published" name="published" />
+                </div>
+                <div>
+                    <label for="authorIDs">authors</label>
+                    <input type="text" id="authorIDs" name="author IDs" />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>PUT Book</h2>
+            <form action="" id="putBook">
+                <div>
+                    <label for="id">id</label>
+                    <input type="number" id="id" name="id" required />
+                </div>
+                <div>
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div>
+                    <label for="numberOfCopies">number of copies</label>
+                    <input type="number" id="numberOfCopies" name="number of copies" required />
+                </div>
+                <div>
+                    <label for="isbn">isbn</label>
+                    <input type="text" id="isbn" name="isbn" />
+                </div>
+                <div>
+                    <label for="published">published</label>
+                    <input type="date" id="published" name="published" />
+                </div>
+                <div>
+                    <label for="authorIDs">authors</label>
+                    <input type="text" id="authorIDs" name="author IDs" />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>DELETE Book</h2>
+            <form action="" id="deleteBook">
+                <div>
+                    <label for="id">id</label>
+                    <input type="number" id="id" name="id" required />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+    </article>
+    <section id="results">
+        <h2>Results</h2>
+        <h3></h3>
+        <div></div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Library Management System</p>
+</footer>
+<script type="module" src="../js/books.js"></script>
+</body>
+</html>

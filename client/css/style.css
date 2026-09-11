@@ -1,0 +1,120 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 1em;
+}
+
+header span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+nav li {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+}
+
+main h1 {
+    font-size: 3rem;
+    color: saddlebrown;
+}
+
+main p {
+    font-size: 1.5rem;
+    color: dimgray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 20em;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.25em;
+}
+
+form input {
+    font-size: 1em;
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    padding: 1em;
+}
+
+#results > div {
+    max-height: 30em;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table th, table td {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+#formBlocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#formBlocks article {
+    flex: 1;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+form input[type="submit"] {
+    background-color: antiquewhite;
+    border: none;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+}
+
+a {
+    color: black;
+}

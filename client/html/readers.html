@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Library - Readers</title>
+</head>
+<body>
+<header>
+    <span>Library - Readers</span>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="authors.html">Authors</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="loans.html">Loans</a></li>
+            <li><a href="readers.html">Readers</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Readers</h1>
+    <article id="formBlocks">
+        <article>
+            <h2>GET Reader</h2>
+            <form action="" id="getReader">
+                <div>
+                    <label for="id">id</label>
+                    <input type="number" id="id" name="id" required />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>GET Readers</h2>
+            <form action="" id="getReaders">
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>POST Reader</h2>
+            <form action="" id="postReader">
+                <div>
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div>
+                    <label for="email">email</label>
+                    <input type="text" id="email" name="email" required />
+                </div>
+                <div>
+                    <label for="phoneNumber">phone number</label>
+                    <input type="text" id="phoneNumber" name="phone number" required />
+                </div>
+                <div>
+                    <label for="birthdate">birthdate</label>
+                    <input type="date" id="birthdate" name="birthdate" required />
+                </div>
+                <div>
+                    <label for="registered">registered</label>
+                    <input type="date" id="registered" name="registered" required />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>PUT Reader</h2>
+            <form action="" id="putReader">
+                <div>
+                    <label for="id">id</label>
+                    <input type="number" id="id" name="id" required />
+                </div>
+                <div>
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div>
+                    <label for="email">email</label>
+                    <input type="text" id="email" name="email" required />
+                </div>
+                <div>
+                    <label for="phoneNumber">phone number</label>
+                    <input type="text" id="phoneNumber" name="phone number" required />
+                </div>
+                <div>
+                    <label for="birthdate">birthdate</label>
+                    <input type="date" id="birthdate" name="birthdate" required />
+                </div>
+                <div>
+                    <label for="registered">registered</label>
+                    <input type="date" id="registered" name="registered" required />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+        <article>
+            <h2>DELETE Reader</h2>
+            <form action="" id="deleteReader">
+                <div>
+                    <label for="id">id</label>
+                    <input type="number" id="id" name="id" required />
+                </div>
+                <input type="submit" value="submit" />
+            </form>
+        </article>
+    </article>
+    <section id="results">
+        <h2>Results</h2>
+        <h3></h3>
+        <div></div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Library Management System</p>
+</footer>
+<script type="module" src="../js/readers.js"></script>
+</body>
+</html>
