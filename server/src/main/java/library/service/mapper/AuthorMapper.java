@@ -1,11 +1,8 @@
 package library.service.mapper;
 
 import library.controller.dto.AuthorDto;
-import library.controller.dto.AuthorDto;
-import library.domain.Author;
 import library.domain.Author;
 import library.domain.Book;
-import library.repository.AuthorRepository;
 import library.repository.BookRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;

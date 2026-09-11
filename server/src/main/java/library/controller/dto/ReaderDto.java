@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
-import java.util.*;
 
 @Getter
 @Setter
@@ -26,12 +25,4 @@ public class ReaderDto {
     private LocalDate birthdate;
     @Schema(example = "2022-10-12")
     private LocalDate registered;
-
-    public ReaderDto(String name, String email, String phoneNumber, LocalDate birthdate, LocalDate registered) {
-        this.name = name;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.birthdate = birthdate;
-        this.registered = registered;
-    }
 }

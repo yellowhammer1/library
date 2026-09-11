@@ -1,18 +1,11 @@
 package library.service.mapper;
 
 import library.controller.dto.LoanDto;
-import library.domain.Book;
 import library.domain.Loan;
-import library.domain.Reader;
-import library.repository.BookRepository;
-import library.repository.LoanRepository;
-import library.repository.ReaderRepository;
-import org.apache.catalina.mapper.Mapper;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Component
 public class LoanMapper implements EntityMapper<Loan, LoanDto> {

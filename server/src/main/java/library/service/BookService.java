@@ -1,10 +1,8 @@
 package library.service;
 
 import library.controller.dto.BookDto;
-import library.domain.Author;
 import library.domain.Book;
 import library.domain.Loan;
-import library.repository.AuthorRepository;
 import library.repository.BookRepository;
 import library.repository.LoanRepository;
 import library.service.mapper.BookMapper;
