@@ -1,5 +1,3 @@
--- smazání všech záznamů z tabulek
-
 CREATE OR REPLACE FUNCTION clean_tables() RETURNS void AS
 $$
 DECLARE
@@ -15,8 +13,6 @@ END;
 $$ LANGUAGE plpgsql;
 SELECT clean_tables();
 
--- reset sekvenci
-
 CREATE OR REPLACE FUNCTION restart_sequences() RETURNS void AS
 $$
 DECLARE
@@ -30,10 +26,6 @@ END LOOP;
 END
 $$ LANGUAGE plpgsql;
 SELECT restart_sequences();
--- konec resetu
-
--- konec mazání
--- mohli bchom použít i jednotlivé příkazy truncate na každo tabulku
 
 SET datestyle = 'DMY';
 
