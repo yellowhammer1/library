@@ -17,5 +17,4 @@ public interface LoanRepository extends JpaRepository<Loan, Long> {
             "THEN true ELSE false END " +
             "FROM Book b WHERE b.id = :bookId")
     Boolean isBookAvailable(@Param("bookId") Long bookId);
-
 }
